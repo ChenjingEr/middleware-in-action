@@ -52,19 +52,19 @@ public class ApiTest {
 			byte[] data01 = zk.getData(path1, null, new Stat());
 			System.out.println(path1 + " -> " + new String(data01));
 
-			String path2 = zk.create("/api-test02", "qiqi".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
-			byte[] data02 = zk.getData(path2, null, new Stat());
-			System.out.println(path2 + " -> " + new String(data02));
-
-			String path3 = zk.create("/api-test03", "qiqi".getBytes(), Ids.OPEN_ACL_UNSAFE,
-					CreateMode.PERSISTENT_SEQUENTIAL);
-			byte[] data03 = zk.getData(path3, null, new Stat());
-			System.out.println(path3 + " -> " + new String(data03));
-
-			String path4 = zk.create("/api-test04", "qiqi".getBytes(), Ids.OPEN_ACL_UNSAFE,
-					CreateMode.EPHEMERAL_SEQUENTIAL);
-			byte[] data04 = zk.getData(path4, null, new Stat());
-			System.out.println(path4 + " -> " + new String(data04));
+//			String path2 = zk.create("/api-test02", "qiqi".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
+//			byte[] data02 = zk.getData(path2, null, new Stat());
+//			System.out.println(path2 + " -> " + new String(data02));
+//
+//			String path3 = zk.create("/api-test03", "qiqi".getBytes(), Ids.OPEN_ACL_UNSAFE,
+//					CreateMode.PERSISTENT_SEQUENTIAL);
+//			byte[] data03 = zk.getData(path3, null, new Stat());
+//			System.out.println(path3 + " -> " + new String(data03));
+//
+//			String path4 = zk.create("/api-test04", "qiqi".getBytes(), Ids.OPEN_ACL_UNSAFE,
+//					CreateMode.EPHEMERAL_SEQUENTIAL);
+//			byte[] data04 = zk.getData(path4, null, new Stat());
+//			System.out.println(path4 + " -> " + new String(data04));
 
 			// 异步创建
 
@@ -117,7 +117,7 @@ public class ApiTest {
 	public void delete() {
 
 	}
-
+	
 	public void get(String path) {
 		try {
 			byte[] data = zk.getData(path, true, new Stat());
@@ -134,7 +134,7 @@ public class ApiTest {
 
 		ApiTest test = new ApiTest();
 		test.create();
-		while (true) {
-		}
+//		while (true) {
+//		}
 	}
 }
