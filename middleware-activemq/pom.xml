@@ -9,8 +9,8 @@
 		<artifactId>middleware-in-action</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>middleware-ehcache</artifactId>
-	<name>middleware-ehcache</name>
+	<artifactId>middleware-activemq</artifactId>
+	<name>middleware-activemq</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,8 +23,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.sf.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-all</artifactId>
+			<version>5.15.5</version>
 		</dependency>
+
 	</dependencies>
 </project>

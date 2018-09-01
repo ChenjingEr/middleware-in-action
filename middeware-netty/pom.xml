@@ -9,9 +9,11 @@
 		<artifactId>middleware-in-action</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>middleware-ehcache</artifactId>
-	<name>middleware-ehcache</name>
+
+	<artifactId>middeware-netty</artifactId>
+	<name>middeware-netty</name>
 	<url>http://maven.apache.org</url>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -23,8 +25,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.sf.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
 		</dependency>
 	</dependencies>
 </project>
